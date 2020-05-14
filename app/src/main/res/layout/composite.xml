@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:id="@+id/composite">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" />
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_weight="1"
+        android:background="@color/colorLine1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/payment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="line1"
+            android:paddingLeft="10dp"
+            android:textSize="22sp"
+            android:gravity="center_vertical"/>
+        <TextView
+            android:id="@+id/card"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="line2"
+            android:paddingLeft="10dp"
+            android:textSize="18sp"
+            android:gravity="center_vertical"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_weight="5"
+        android:background="@color/colorLine1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="coast"
+            android:layout_marginRight="10dp"
+            android:paddingLeft="10dp"
+            android:textSize="22sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:gravity="center_vertical|end"/>
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:text="date"
+            android:paddingLeft="10dp"
+            android:textSize="18sp"
+            android:gravity="center_vertical|end"/>
+    </LinearLayout>
+
+</LinearLayout>
